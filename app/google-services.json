@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "525809241998",
+    "project_id": "empowering-the-nationa-final",
+    "storage_bucket": "empowering-the-nationa-final.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525809241998:android:1f29acff17f40a9a3d5edf",
+        "android_client_info": {
+          "package_name": "com.example.empoweringthenationfinal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDwjjjp380H8rKutkdhVyt6eXN-DIo-m8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

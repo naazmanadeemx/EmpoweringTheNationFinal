@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">EmpoweringTheNationFinal</string>
+    <string name="logo_description">App Logo</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="register">Register</string>
+    <string name="cant_login">Can’t Login? Let us help you</string>
+    <string name="total_with_vat">Total (with VAT): R%d</string>
+
+
+</resources>

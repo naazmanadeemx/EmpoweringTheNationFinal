@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactActivity">
+
+    <!-- Blue Header with "Contact Us" title -->
+    <View
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#00609e"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/title_about_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONTACT US"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/header"
+        app:layout_constraintBottom_toBottomOf="@id/header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Menu Icon (left side) -->
+    <ImageView
+        android:id="@+id/menu_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu"
+        android:contentDescription="Menu Icon"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Log Out Button (right side) -->
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00609e"
+        android:text="Logout"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Customer Service Section -->
+    <TextView
+        android:id="@+id/customer_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer Service"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/logout_button"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Call center hours inside blue block -->
+    <TextView
+        android:id="@+id/call_centre_hours"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_blue_background"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:text="Call center operating hours:\nMon - Fri: 8am - 5pm\nSat: 8am - 1pm\nSun: Closed"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/customer_service"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Email Us Label -->
+    <TextView
+        android:id="@+id/email_us_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Us"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/call_centre_hours"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Send Us An Enquiry Button -->
+    <Button
+        android:id="@+id/enquiry_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#00609e"
+        android:text="Send Us An Enquiry"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email_us_label" />
+
+    <!-- Social Media Section -->
+    <TextView
+        android:id="@+id/follow_us_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Follow Us On"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/enquiry_button"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Aligning Social Media Icons properly -->
+    <LinearLayout
+        android:id="@+id/social_media_icons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/follow_us_label"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Facebook Icon -->
+        <ImageView
+            android:id="@+id/facebook_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_facebook"
+            android:contentDescription="Facebook"
+            android:layout_marginEnd="16dp"/>
+
+        <!-- Twitter Icon -->
+        <ImageView
+            android:id="@+id/twitter_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_twitter"
+            android:contentDescription="Twitter"
+            android:layout_marginEnd="16dp"/>
+
+        <!-- Instagram Icon -->
+        <ImageView
+            android:id="@+id/instagram_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_instagram"
+            android:contentDescription="Instagram"/>
+    </LinearLayout>
+
+    <!-- FAQ Section -->
+    <TextView
+        android:id="@+id/faq_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frequently Asked Questions"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/social_media_icons"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"/>
+
+    <!-- First FAQ Entry -->
+    <TextView
+        android:id="@+id/faq_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Q: How do I contact customer service?\nA: You can call us at the number provided or send us an enquiry through the form above."
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/faq_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Second FAQ Entry -->
+    <TextView
+        android:id="@+id/faq_content_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Q: What are the operating hours for customer service?\nA: Our call center operates from Mon - Fri: 8am - 5pm, Sat: 8am - 1pm, and is closed on Sundays."
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/faq_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Third FAQ Entry -->
+    <TextView
+        android:id="@+id/faq_content_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Q: Can I visit your office in person?\nA: Yes, you can visit us at our location. Please use the 'View Our Location' button below to get directions."
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/faq_content_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- View Location Button -->
+    <Button
+        android:id="@+id/location_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#00609e"
+        android:text="View Our Location"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/faq_content_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Bottom Navigation Buttons -->
+    <LinearLayout
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#00609e"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star"
+                android:contentDescription="Home"
+                android:layout_marginBottom="4dp"/>
+
+            <Button
+                android:id="@+id/home_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="#00609e"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star"
+                android:contentDescription="About Us"
+                android:layout_marginBottom="4dp"/>
+
+            <Button
+                android:id="@+id/about_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Us"
+                android:textColor="#00609e"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star"
+                android:contentDescription="Courses"
+                android:layout_marginBottom="4dp"/>
+
+            <Button
+                android:id="@+id/courses_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Courses"
+                android:textColor="#00609e"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star"
+                android:contentDescription="Contact Us"
+                android:layout_marginBottom="4dp"/>
+
+            <Button
+                android:id="@+id/contact_button"
+                android:layout_width="103dp"
+                android:layout_height="60dp"
+                android:text="Contact Us"
+                android:textColor="#00609e" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

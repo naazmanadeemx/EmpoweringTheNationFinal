@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CoursesActivity">
+
+    <!-- Blue Header with "Courses" title -->
+    <View
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#00609e"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/title_about_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COURSES"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/header"
+        app:layout_constraintBottom_toBottomOf="@id/header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Menu Icon (left side) -->
+    <ImageView
+        android:id="@+id/menu_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu"
+        android:contentDescription="Menu Icon"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Cart Button (right side) -->
+    <Button
+        android:id="@+id/cart_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00609e"
+        android:text="Cart"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Select Course By Duration Label -->
+    <TextView
+        android:id="@+id/select_course_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECT COURSE BY DURATION"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/cart_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 6 Months Course Label -->
+    <Button
+        android:id="@+id/six_months_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6 MONTHS COURSE"
+        android:backgroundTint="#60bcef"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/select_course_duration"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Buttons for each 6 Months Course arranged in two rows -->
+    <LinearLayout
+        android:id="@+id/six_months_courses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/six_months_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/first_aid_course"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:text="First Aid"
+                android:backgroundTint="#00609e"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:layout_margin="8dp" />
+
+            <Button
+                android:id="@+id/sewing_course"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:text="Sewing"
+                android:backgroundTint="#00609e"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:layout_margin="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/landscaping_course"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:text="Landscaping"
+                android:backgroundTint="#00609e"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:layout_margin="8dp" />
+
+            <Button
+                android:id="@+id/life_skills_course"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:text="Life Skills"
+                android:backgroundTint="#00609e"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:layout_margin="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 6 Weeks Course Label -->
+    <Button
+        android:id="@+id/six_weeks_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6 WEEKS COURSE"
+        android:backgroundTint="#60bcef"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/six_months_courses"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Buttons for each 6 Weeks Course (Child Minding and Cooking) -->
+    <LinearLayout
+        android:id="@+id/six_weeks_courses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/six_weeks_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/child_minding_course"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:text="Child Minding"
+            android:backgroundTint="#00609e"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/cooking_course"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:text="Cooking"
+            android:backgroundTint="#00609e"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:layout_margin="8dp" />
+    </LinearLayout>
+
+    <!-- Garden Maintenance Button aligned with the others -->
+    <Button
+        android:id="@+id/garden_maintenance_course"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Garden Maintenance"
+        android:backgroundTint="#00609e"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toBottomOf="@id/six_weeks_courses"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Testimonials Section -->
+    <TextView
+        android:id="@+id/testimonials_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Testimonials or Success Stories"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/garden_maintenance_course"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <LinearLayout
+        android:id="@+id/testimonials_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/testimonials_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Testimonial 1 -->
+        <TextView
+            android:id="@+id/testimonial_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="&quot;This course helped me land my dream job! Highly recommend.&quot;"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:gravity="center"
+            android:background="#E0E0E0"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Testimonial 2 -->
+        <TextView
+            android:id="@+id/testimonial_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="&quot;A great learning experience! The instructors were amazing.&quot;"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:gravity="center"
+            android:background="#E0E0E0"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Testimonial 3 -->
+        <TextView
+            android:id="@+id/testimonial_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="&quot;Thanks to this course, I now have the skills to excel in my career.&quot;"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:gravity="center"
+            android:background="#E0E0E0"
+            android:layout_marginBottom="8dp" />
+    </LinearLayout>
+
+    <!-- Bottom Navigation Buttons -->
+    <LinearLayout
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#00609e"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star"
+                android:contentDescription="Home"
+                android:layout_marginBottom="4dp"/>
+
+            <Button
+                android:id="@+id/home_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="#00609e"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star"
+                android:contentDescription="About Us"
+                android:layout_marginBottom="4dp"/>
+
+            <Button
+                android:id="@+id/about_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Us"
+                android:textColor="#00609e"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star"
+                android:contentDescription="Courses"
+                android:layout_marginBottom="4dp"/>
+
+            <Button
+                android:id="@+id/courses_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Courses"
+                android:textColor="#00609e"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star"
+                android:contentDescription="Contact Us"
+                android:layout_marginBottom="4dp"/>
+
+            <Button
+                android:id="@+id/contact_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Us"
+                android:textColor="#00609e"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

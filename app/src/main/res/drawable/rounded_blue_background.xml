@@ -1,0 +1,19 @@
+<!-- res/drawable/rounded_white_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background Layer (White Fill) -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp" /> <!-- Adjust the radius for more or less roundness -->
+            <solid android:color="#FFFFFF" /> <!-- White background -->
+        </shape>
+    </item>
+    <!-- Outline Layer (Blue Stroke) -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp" />
+            <stroke
+                android:width="2dp"
+            android:color="#00609e" /> <!-- Blue outline -->
+        </shape>
+    </item>
+</layer-list>

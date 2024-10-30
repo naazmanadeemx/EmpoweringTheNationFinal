@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".HelpActivity">
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#00609e"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Header Text -->
+    <TextView
+        android:id="@+id/cant_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Having trouble logging in?"
+        android:textSize="22sp"
+        android:textColor="#00609e"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Subheader Text -->
+    <TextView
+        android:id="@+id/help_subheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Here are some common issues and solutions:"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/cant_login"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Issue 1: Incorrect Credentials -->
+    <TextView
+        android:id="@+id/issue_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Incorrect Email or Password:"
+        android:textSize="18sp"
+        android:textColor="#00609e"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/help_subheader"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/issue_1_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ensure that you are entering the correct email and password. Passwords are case-sensitive."
+        android:textSize="14sp"
+        android:textColor="#4A4A4A"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/issue_1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Issue 2: Forgot Password -->
+    <TextView
+        android:id="@+id/issue_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. Forgot Password:"
+        android:textSize="18sp"
+        android:textColor="#00609e"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/issue_1_details"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/issue_2_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click on the 'Forgot Password' link on the login page to reset your password."
+        android:textSize="14sp"
+        android:textColor="#4A4A4A"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/issue_2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Issue 3: Network Connectivity -->
+    <TextView
+        android:id="@+id/issue_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. Network Connectivity Issues:"
+        android:textSize="18sp"
+        android:textColor="#00609e"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/issue_2_details"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/issue_3_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ensure that your device is connected to the internet. Try switching between Wi-Fi and mobile data."
+        android:textSize="14sp"
+        android:textColor="#4A4A4A"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/issue_3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Issue 4: Account Locked -->
+    <TextView
+        android:id="@+id/issue_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4. Account Locked:"
+        android:textSize="18sp"
+        android:textColor="#00609e"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/issue_3_details"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/issue_4_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If you’ve entered the wrong password multiple times, your account may be locked. Wait a few minutes and try again, or contact support."
+        android:textSize="14sp"
+        android:textColor="#4A4A4A"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/issue_4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Issue 5: App Update Required -->
+    <TextView
+        android:id="@+id/issue_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5. App Update Required:"
+        android:textSize="18sp"
+        android:textColor="#00609e"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/issue_4_details"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/issue_5_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If you experience problems, make sure you are using the latest version of the app. Check for updates in your app store."
+        android:textSize="14sp"
+        android:textColor="#4A4A4A"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/issue_5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Issue 6: Email Verification -->
+    <TextView
+        android:id="@+id/issue_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6. Email Verification Issues:"
+        android:textSize="18sp"
+        android:textColor="#00609e"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/issue_5_details"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/issue_6_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check your inbox for the verification email. If you can’t find it, check your spam folder or request a new verification email."
+        android:textSize="14sp"
+        android:textColor="#4A4A4A"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/issue_6"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Issue 7: Login Timeout -->
+    <TextView
+        android:id="@+id/issue_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7. Login Timeout:"
+        android:textSize="18sp"
+        android:textColor="#00609e"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/issue_6_details"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/issue_7_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If your login attempt times out, check your internet connection and try again. If the issue persists, contact support."
+        android:textSize="14sp"
+        android:textColor="#4A4A4A"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/issue_7"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Issue 8: Unsupported Device -->
+    <TextView
+        android:id="@+id/issue_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8. Unsupported Device:"
+        android:textSize="18sp"
+        android:textColor="#00609e"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/issue_7_details"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/issue_8_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If your device isn’t supported, try using another device or updating your device’s operating system."
+        android:textSize="14sp"
+        android:textColor="#4A4A4A"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/issue_8"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Issue 9: Captcha or Verification Issues -->
+    <TextView
+        android:id="@+id/issue_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9. Captcha or Verification Issues:"
+        android:textSize="18sp"
+        android:textColor="#00609e"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/issue_8_details"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/issue_9_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If you're having trouble with captcha, try refreshing the captcha or ensure your device's security settings are up-to-date."
+        android:textSize="14sp"
+        android:textColor="#4A4A4A"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/issue_9"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Issue 10: Session Expired -->
+    <TextView
+        android:id="@+id/issue_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10. Session Expired:"
+        android:textSize="18sp"
+        android:textColor="#00609e"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/issue_9_details"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/issue_10_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If your session expires, log in again and save your work regularly to avoid losing progress."
+        android:textSize="14sp"
+        android:textColor="#4A4A4A"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/issue_10"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

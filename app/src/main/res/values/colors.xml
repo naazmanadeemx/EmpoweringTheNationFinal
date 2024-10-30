@@ -1,0 +1,10 @@
+<resources>
+    <color name="primaryColor">#00609e</color> <!-- Deep Blue -->
+    <color name="primaryDarkColor">#22489e</color> <!-- Dark Blue -->
+    <color name="accentColor">#60bcef</color> <!-- Lighter Blue -->
+    <color name="buttonColor">#00609e</color> <!-- Button Color (Deep Blue) -->
+    <color name="neutralGray">#757575</color> <!-- Neutral Gray -->
+    <color name="button_pressed_color">#FF4081</color> <!-- Color when pressed -->
+    <color name="button_normal_color">#00609e</color> <!-- Normal color -->
+    <color name="blue">#00609e</color>
+</resources>
